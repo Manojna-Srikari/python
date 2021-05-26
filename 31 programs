@@ -1,0 +1,589 @@
+
+#1 EVEN ODD
+"""
+def even_odd(n):
+    if(n%2!=0):
+        return "odd"
+    else:
+        return "even"
+              
+n=int(input())
+print(even_odd(n))
+"""
+
+#2 TO ADD 2 NUMBERS
+"""
+def add_num(n1,n2):
+    return n1+n2
+
+n1=int(input())
+n2=int(input())
+print(add_num(n1,n2))
+"""
+
+#3 TO ADD N NUMBERS
+"""
+def add_num(t):
+    s=0
+    for i in range(0,t):
+        n=int(input())
+        s=s+n
+    return s
+
+
+t=int(input()) #t=5
+print(add_num(t))
+"""
+
+
+
+#4 CUBE SUM OF FIRST N NATURAL NUMBERS
+"""
+n=int(input())   #3
+s=0              #s=0
+for i in range(1,n+1):   #1,2,3
+    s=s+(i**3)         #s=36
+print(s)
+"""
+#or
+"""
+def sumofseries(n): 
+    x=0
+    if n%2==0:  #6%2==0 true
+        x=(n/2)*(n+1) #3.0*7 
+    else:
+        x=((n+1)/2)*n
+    return x*x   
+
+n=int(input()) #6
+print(sumofseries(n))
+"""
+
+#5 SUM OF N NATURAL NUMBERS
+"""
+def sum_series(n):
+    #return(n*(n+1))//2
+    
+
+  x=0
+  if n%2==0: #0 #!0
+      x=(n/2)*(n+1) #3
+  else:
+      x=((n+1)//2)*n #6
+      return x #3  #6
+
+
+
+n=int(input())   #n=2 #n=3
+print(sum_series(n))
+"""
+
+# FACTORIAL OF A PROGRAM
+
+#5!=1*2*3*4*5=120
+"""
+n=int(input())#5
+v=1
+for i in range(1,n+1): #1 #2 #3 4 5
+    v=v*i #1*1 =1 v=1
+          #1*2=2  v=2
+           #2*3=6  v=6
+           #6*4=24 v=24
+           #24*5=120 v=120  
+print(v)
+or
+def fact(n):
+    return 1 if (n==1 or n==1) else n*fact(n-1)
+
+n=int(input())
+print(fact(n))
+"""
+
+# SIMPLE INTREST
+
+"""
+def sim_int(p,t,r):
+    return(p*t*r/100)
+     
+p=int(input())
+t=int(input())
+r=int(input())
+    
+
+
+print(sim_int(p,t,r))
+"""
+
+
+#area of circle
+"""
+import math
+
+r=float(input())
+m=((math.pi)*r*r)
+v=int(input())
+print(round(m,v))
+"""
+
+#COMPOUND INTEREST
+"""p=(input())
+r=(input())
+t=(input())
+a= (((((r/100)+1)**t)*p)-p)
+print(a)
+"""
+#or
+
+"""
+def compound_interest(p,r,t):
+    
+
+	# Calculates compound interest
+    CI =(((((r/100)+1)**t)*p)-p)
+	
+	#Amount = principle * (pow((1 + rate / 100), time))
+	#CI = Amount - principle
+    print("Compound interest is", CI)
+
+principle=float(input())
+rate=float(input())
+time=float(input())
+compound_interest(principle,rate,time)
+"""
+
+#ARMSTRONG NUMBER
+"""
+def digit_count(temp):
+    c=0
+    while temp:
+        m=n%10
+        temp=temp//10
+        c=c+1
+    return c
+
+n=int(input())#n=153
+temp=n
+s=0
+while n:
+    v=n%10    #v=3  5 1
+    n=n//10   #n=15  1 0
+    s=s+(v**digit_count(temp)) #27+125+1=153
+if temp==s:
+    print("ss")
+else:
+    print("no")
+"""
+
+#FIBBONOCI SERIES
+#n=1  0
+#n=2  0,1
+#n=3  0,1,1
+#n=4  0,1,1,2
+
+"""
+num=int(input())
+a=0
+b=1
+if num==1:
+    print(a)
+elif num==2:
+    print(a,b)
+else:
+    print(a,b,end=" ")
+    for i in range (2,num+1):
+        c=a+b
+        a=b
+        b=c
+        print(c,end=" ")    
+"""
+#FIBBINOCI SERIES PRINTING UPTO GIVEN VALUE
+"""
+num=int(input())
+a=0
+b=1
+i=1
+c=1
+while c<num:
+    if i==1:
+        print(a,end=" ")
+    else:
+        print(b,end=" ")
+        c=a+b
+        a=b
+        b=c
+    i+=1     
+"""
+#ASCII NUMBER
+"""
+n=str(input())
+print(ord(n))
+"""
+
+
+#COLLATZ SEQUENCE
+"""
+def manu(n):  #7
+    print(n,end=" ")
+    if(n==1):
+        return 0
+    if(n%2==0):
+        return manu(n//2)
+    else:
+        return manu((3*n)+1)
+   
+
+
+
+n=int(input())
+manu(n)
+"""
+
+
+
+#PRIME NUMBER USING SEIVES ALGORITHM
+"""
+n=1000000
+seive=[1 for i in range(n+1)]
+i=2
+while (i*i<=n):
+    if seive[i]==1:
+        for j in range(i*i,n+1,i):
+            seive[j]=0
+    i=i+1
+
+seive[0]=0
+seive[1]=0
+
+n=int(input()) #5 
+
+if seive[n]==1:
+    print("Prime")
+else:
+    print("Not a prime")
+ """   
+    
+
+#Python program to print all Prime numbers in an Interval
+"""
+start = int(input())  #1
+end = int(input())    #5
+  
+for i in range(start, end+1): #1,6 1  2  3  4
+  if i>1: #2>1 3>1 4>1
+    for j in range(2,i):  #2,2  2,3  2,4
+        if(i % j==0): #0  #0
+            break
+    else:
+        print(i)
+
+"""
+#PIG PROGROM
+"""
+w=input()   
+print(w)
+w=w.split(' ')
+for i in w:
+    if len(i)>=3:
+        i=i+"%say"%(i[0])
+        i=i[1:]
+        print(i)
+    else:
+        pass
+
+   """ 
+
+#SOLVE QUADRATIC EQUATION
+"""
+# Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+import cmath
+
+a = 1
+b = 5
+c = 6
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
+"""
+#OR
+"""
+def quad_solve(a,b,c):
+    z=(b**2)-(4*a*c)
+    ans1=((-b+z**(1/2))/(2*a))
+    ans2=((-b-z**(1/2))/(2*a))
+    return ans1,ans2
+
+a=float(input("Enter x**2 coefficient"))
+b=float(input("Enter x coefficient"))
+c=float(input("Enter the constant"))
+print(quad_solve(a,b,c))
+"""
+
+
+
+
+#TO CREATE A COUNTDOWN TIMER
+"""
+import time
+
+
+n=int(input())
+while time_sec:
+    mins,secs=divmod(time_sec,60)
+    """
+
+    
+
+    
+    
+
+
+#LEAP YEAR OR NOT
+"""
+year=int(input())
+if year%4==0:
+    if year%100==0:
+        if year%400==0:
+            print("is a leap year")
+        else:
+            print("is not a leap year")
+    else:
+        print("is not a leap century")
+
+else:
+    print("is not a leap year")
+ """
+
+#SWAP
+"""
+a=int(input())
+b=int(input())
+temp=a
+a=b
+b=temp
+print(a,b)
+"""
+#or
+"""
+a=int(input())
+b=int(input())
+print("before swap:","a-->",a,"b-->",b)
+b,a=a,b
+print("after swap:","a-->",a,"b-->",b)
+   """
+
+#GENERATE A RANDOM NUMBER
+"""
+import random
+for i in range(1,6):
+    print(random.randit(1,99))
+    """
+
+#KM to MILES
+"""
+n=float(input())
+n=n/1.609
+print(n)
+"""
+
+#or
+"""
+n=float(input())
+conv_fac=0.621371
+miles=n*conv_fac
+print(round(miles,2))
+"""
+
+
+
+    
+
+#FACTORS OF A NUMBER
+"""
+n,d=map(int,input().split())
+l=[]
+for i in range(1,n+1):
+    if n%i==0:
+        l.append(i)
+for i in range(0,len(l)):
+    if (l[i]==d):
+        print(i+1)
+"""        
+
+
+#LARGEST OF ALL THREE NUMBERS
+"""
+n=int(input())
+m=int(input())
+v=int(input())
+if n>m and n>v:
+    print(n)
+elif m>v and m>n:
+    print(m)
+else:
+    print(v)
+"""
+
+#MULTIPLICATION TABLE
+"""
+n=int(input())
+m=int(input())
+for i in range(1,m+1):
+    print(n,"*",i,"=",n*i)
+""" 
+
+
+#POWERS
+"""
+n=int(input())
+m=int(input())
+for i in range(1,m+1):
+    print(n,"raised to power",i,"is",n**i)
+"""
+
+# Python program to convert decimal into other number systems
+"""
+dec = 344
+
+print("The decimal value of", dec, "is:")
+print(bin(dec), "in binary.")
+print(oct(dec), "in octal.")
+print(hex(dec), "in hexadecimal.")
+"""
+
+
+#LCM
+"""
+n=int(input())
+m=int(input())
+r=2
+res=1
+while true:
+    if n%r==0 and m%2==0:
+        n=n//r
+        m=m//r
+        res=res*r
+    else:
+        r=r+1
+    if n<r or m<r:
+        break
+    print(res*n*m)"""
+#or
+
+"""
+def lcm(high,n1,n2,n3):
+    print(high,n1,n2,n3)
+    bigg=high
+    i=1
+    while true:
+        if bigg%n1==0 and bigg%n2==0 and bigg%n3==0:
+            return bigg
+            break
+        else:
+            bigg=high*i
+        i=i+1
+         
+n1=int(input())
+n2=int(input())
+n3=int(input())
+if n1>n2 and n1>n3:
+    big=n1
+elif n2>n3 and n2>n1:
+    big=n2
+else:
+    big=n3
+print(lcm(big,n1,n2,n3))
+"""
+
+
+#GCD WITH EUCLIDEAN ALGORITHM
+"""
+def gcd(x,y):
+    while(y):
+        x,y=y,x%y
+    return x
+
+a=int(input())
+b=int(input())
+print(gcd(x,y))
+"""
+
+#SIMPLE CALCULATOR
+"""
+n=float(input())
+m=float(input())
+v=input()
+if v=="+":
+    print(n+m)
+elif v=="-":
+    print(n-m)
+elif v=="*":
+    print(n*m)
+elif v=="//":
+    print(n//m)
+else:
+    print("none")
+"""
+#or
+
+
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def multiply(x, y):
+    return x * y
+
+
+def divide(x, y):
+    return x / y
+
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+  choice = input("Enter choice(1/2/3/4): ")
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        break
+    else:
+        print("Invalid Input")
+
+
+
+
+
+
+
+
+
+
+
