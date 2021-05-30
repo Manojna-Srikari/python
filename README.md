@@ -59,3 +59,5 @@
 #30]HCF using EUCLIDEAN Algorithm
 
 #31]Program make a simple calculator
+#32] CALENDAR
+#33] DECIMAL TO BINARY USING RECCURSION
