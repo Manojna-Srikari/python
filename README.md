@@ -63,3 +63,13 @@
 #32] CALENDAR
 
 #33] DECIMAL TO BINARY USING RECCURSION
+
+#34] PYTHON PROGRAM TO ADD TWO MATRICES
+
+#35]Write A Program to check whether a given number is Amicable Number or not and display Amicable Number or Not Amicable Number
+
+#36]A number is said to be the Disarium number when the sum of its digit raised to the power of their
+#respective positions becomes equal to the number itself.
+
+#37]AREA OF TRIANGLE
+
