@@ -1,0 +1,261 @@
+#Python Program to Display Calendar
+"""
+import calendar
+y=int(input())
+m=int(input())
+print(calendar.month(y,m))
+"""
+
+#PYTHON PROGRAM TO CONVERT DECIMAL TO BINARY USING RECURSION2
+
+"""
+def dec_bin(n): #5
+    if(n>1): #5>1
+        dec_bin(n//2) #5//2 2
+    print(n%2,end="") #0 
+
+n=int(input()) #5
+dec_bin(n)
+"""
+#Python Program to Generate a Random Number
+#1]Generating a Random Number
+
+#--->The random module provides a random() method which generates a float number between 0 and 1.    
+"""
+import random
+print(random.random())
+"""
+#2]Generating a Number within a Given Range
+
+#--->Python random module provides the randint() method that generates an integer number within a specific range. 
+"""
+import random
+a=random.randint(1,10)
+print(a)
+"""
+#3]Using for loop
+
+#-->The randint() method can be used with for loop to generated a list of random numbers.
+"""
+import random
+l=[]
+for i in range(1,6):
+    a=random.randint(1,10)
+    l.append(a)
+print(l)
+"""
+#4]Using random.sample()
+
+#--->The random module also provides the sample()
+"""
+import random
+a=random.sample(range(1,7),3)
+print(a)
+"""
+
+# TRANSPOSE OF A MATRIX
+"""
+a=[[1,1,1],[2,2,2],[3,3,3]]
+for i in range(0,len(a)):
+    for j in range(0,len(a[0])):
+        print(a[j][i],end=" ")
+    print(end="\n\n")  #\t=tabspace 
+"""
+
+
+#Python Program to Check Whether a String is Palindrome or Not
+"""
+n=input()
+temp=n[::-1]
+if(temp==n):
+    print(n,"palindrome")
+else:
+    print(n,"not a palindrome")
+"""
+
+#Python Program to Check Whether a String is Palindrome or Not
+
+"""
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+
+#my_str = "Hello!!!, he said ---and went."
+
+# To take input from the user
+my_str = input("Enter a string: ")
+
+# remove punctuation from the string
+no_punct = ""
+for i in my_str:
+   if i not in punctuations:
+       no_punct = no_punct + i
+
+# display the unpunctuated string
+print(no_punct)
+"""
+
+#Python Program to Sort Words in Alphabetic Order
+
+"""
+my_str = input("Enter a string: ")
+words = [word.lower() for word in my_str.split()]
+words.sort()
+print("The sorted words are:")
+for word in words:
+   print(word)
+"""
+
+#Python Program to Illustrate Different Set Operations
+"""
+n={3,4,1,2,6}
+v={1,5,7,3,2}
+print("union of", n|v)
+print("intersection of", n&v)
+print("difference of", n-v)
+print("symmetric difference of",n^v)
+"""
+#Python Program to Count the Number of Each Vowel
+"""
+n=input()
+m=['a','e','i','o','u']
+sum=0
+for i in n:
+    if i in m:
+        #print(i,end="")
+        sum=sum+1
+print(sum)
+"""
+
+#Python Program to Create Pyramid Patterns
+"""
+5
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+"""
+"""
+n=int(input())
+for i in range (0,n):
+    for j in range (0,i+1):
+        print("*",end=" ")
+    print(end="\n")
+"""
+"""
+5
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+"""
+"""
+n=int(input())
+for i in range (0,n):
+    for j in range (n,i,-1):
+        print("*",end=" ")
+    print(end="\n")
+"""
+"""
+10
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+"""
+"""
+n=int(input())
+k=(n+1)//2
+for i in range (0,k):
+    for j in range (0,i+1):
+        print("*",end=" ")
+    print(end="\n")
+for i in range (k,n):
+    for j in range (n,i,-1):
+        print("*",end=" ")
+    print(end="\n")    
+"""
+#List Slicing in Python
+
+#Get all the Items
+output-[1, 2, 3, 4, 5]
+
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[:])
+
+#Get all the Items After a Specific Position
+[3, 4, 5]
+my_list = [1, 2, 3, 4, 5]
+print(my_list[2:])
+
+#Get all the Items Before a Specific Position
+my_list = [1, 2, 3, 4, 5]
+print(my_list[:2])
+[1, 2]
+
+#The items before index 2 are sliced. Item on index 2 is excluded
+#Get all the Items from One Position to Another Position
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[2:4])
+[3, 4]
+#The starting position (i.e. 2) is included and the ending position (i.e. 4) is excluded.
+
+#Get the Items at Specified Intervals
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[::2])
+[1, 3, 5]
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[::-2])
+
+[5, 3, 1]
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[1:4:2])
+
+[2, 4]
+
+
+#Python Program Concatenate Two Lists
+
+#Example 1: Using + operator
+list_1 = [1, 'a']
+list_2 = [3, 4, 5]
+
+list_joined = list_1 + list_2
+print(list_joined)
+
+#Example 2: Using iterable unpacking operator *
+list_1 = [1, 'a']
+list_2 = range(2, 4)
+
+list_joined = [*list_1, *list_2]
+print(list_joined)
+
+
+#Example 3: With unique values
+list_1 = [1, 'a']
+list_2 = [1, 2, 3]
+
+list_joined = list(set(list_1 + list_2))
+print(list_joined)
+#set is used to remove duplicates and arrange them in ascending order
+
+#Example 4: Using extend()
+list_1 = [1, 'a']
+list_2 = [1, 2, 3]
+
+list_2.extend(list_1)
+print(list_2)
+
