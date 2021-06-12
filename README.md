@@ -73,3 +73,30 @@
 
 #37]AREA OF TRIANGLE
 
+#38]#Python Program to Generate a Random Number
+#1]Generating a Random Number
+
+#--->The random module provides a random() method which generates a float number between 0 and 1.
+#2]Generating a Number within a Given Range
+
+#--->Python random module provides the randint() method that generates an integer number within a specific range. 
+#3]Using for loop
+
+#-->The randint() method can be used with for loop to generated a list of random numbers.
+#4]Using random.sample()
+
+#--->The random module also provides the sample()
+
+#39]TRANSPOSE OF A MATRIX
+
+#40]Python Program to Check Whether a String is Palindrome or Not
+
+#41]Python Program to Check Whether a String is Palindrome or Not
+
+#42]Python Program to Sort Words in Alphabetic Order
+
+#43]Python Program to Illustrate Different Set Operations
+
+#44]
+
+
