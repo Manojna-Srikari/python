@@ -97,6 +97,64 @@
 
 #43]Python Program to Illustrate Different Set Operations
 
-#44]
+#44]Python Program to Count the Number of Each Vowel
+
+#45]Python Program to Create Pyramid Patterns
+
+#46]List Slicing in Python
+#Get all the Items
+
+#47]Python Program Concatenate Two Lists
+#Example 1: Using + operator
+
+#48]Python Program to Check If a List is Empty
+#using boolean expression
+#using length
+#COMPARING WITH []
+
+#49]Creating Python Dictionary
+
+#50]Dictionary Comprehension
+
+#51]Dictionary Comprehension with if conditional
+
+#52] Membership Test for Dictionary Keys
+
+#53]PYTHON PROGRAM TO MERGE 2 DICTIONARIES
+ using operator | or **
+ #using copy() and update()
+ 
+#54]PYTHON PROGRAM TO ITERATE OVER DICTIONARIES FOR LOOP
+
+#55]Python Program to Sort a Dictionary by Value
+
+#56]PYTHON PROGRAM TO CHECK IF A KEY IS ALREADY PRESENT IN A DICTIONARY
+
+#57]Python Program to Delete an Element From a Dictionary
+#1 usind del key word
+
+#58]Python Program to Get the Last Element of the List
+
+#59]Python Program to Concatenate Two Lists
+
+#60]Python Program to Get a Substring of a String
+
+#61]Python Program to Print Colored Text to the Terminal
+
+#62]PARSE STRING TO INTEGER
+ #ii]Parse string into float
+  #iii]A string float numeral into integer
+  
+#63]PYTHON PROGRAM TO SELECT RANDOMLY IN LIST
+
+#64]PYTHON PROGRAM TO CHECK IF A STRING IS A NUMBER (FLOAT)
+
+#65]Python Program to Count the Occurrence of an Item in a List
+
+#66]Python Program to Create a Long Multiline String
+#1: Using triple quotes
+#2: Using parentheses and a single/double quotes
+#3: Using \
+
 
 
