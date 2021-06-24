@@ -578,11 +578,57 @@ string=("hai everyone \n"
 print(string)
 """
 # 3: Using \
+"""
 string="hai everyone \n" \
 "how are you \n" \
 "everthing is fine.."
-
 print(string)
+"""
+
+#PYTHON PROGRAM TO FIND THE LARGEST ELEMENT IN AN ARRAY
+
+"""
+def large_ele(arr):
+    temp=arr[0]
+    for i in range(1,len(arr)):
+        if(temp<arr[i]):
+            temp=arr[i]
+    return temp           
+
+
+arr=list(map(int,input().split()))
+l=large_ele(arr)
+print("large:",l)
+"""
+
+#PYTHON PROGRAM TO FIND THE SMALLEST ELEMENT IN AN ARRAY
+"""
+def small_ele(arr):
+    temp=arr[0]
+    for i in range(1,len(arr)):
+        if(temp>arr[i]):
+            temp=arr[i]
+    return temp           
+
+
+arr=list(map(int,input().split()))
+s=small_ele(arr)
+print("small:",s)
+"""
+
+#Python Program for Find reminder of array multiplication divided by n
+"""
+l=list(map(int,input().split()))
+d=int(input())
+s=1
+for i in range(1,len(l)):
+    s=s*l[i]
+    #print(s)
+print(s%d)
+"""
+
+
+
 
 
 
