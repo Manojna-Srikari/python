@@ -156,5 +156,10 @@
 #2: Using parentheses and a single/double quotes
 #3: Using \
 
+#67]PYTHON PROGRAM TO FIND THE LARGEST ELEMENT IN AN ARRAY
+
+#68]PYTHON PROGRAM TO FIND THE SMALLEST ELEMENT IN AN ARRAY
+
+#69]Python Program for Find reminder of array multiplication divided by n
 
 
