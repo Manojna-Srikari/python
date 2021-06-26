@@ -162,4 +162,8 @@
 
 #69]Python Program for Find reminder of array multiplication divided by n
 
+#70]PYTHON PROGRAM FOR ARRAY ROTATION
+
+#71]Python Program to Split the array and add the first part to the end
+
 
