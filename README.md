@@ -166,4 +166,8 @@
 
 #71]Python Program to Split the array and add the first part to the end
 
+#72]#Python program to interchange first and last elements in a list
+
+#73]Python program to swap two elements in a list
+
 
