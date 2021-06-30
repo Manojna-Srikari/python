@@ -696,6 +696,55 @@ l[pos1],l[pos2]=l[pos2],l[pos1]
 print(l)
 """
 
+#Length of the list using len_hint()
+"""
+from operator import length_hint
+l=list(map(int,input().split()))
+length=length_hint
+print("length of the list",length)
+"""
+#Check if element exists in list in Python
+"""
+def native_check(n,element):
+    for i in n:
+        if(i==element):
+            print("present")
+            break
+    else:
+        print("absent")
+def set_check(n,element):
+    s=set(n)
+    for i in s:
+        if(i==element):
+            print("yes")
+            break
+    else:
+        print("no")
+
+def count_check(n,element):
+    l=n.count(element)
+    if(l>0):
+        print("pass")
+    else:
+        print("fail")
+
+
+
+
+n=list(map(int,input().split()))
+print("Select a method.\n 1:Native method \n 2:set method \n 3:count method")
+sel=int(input("select one of the method:"))
+element=int(input("which element do you want to check:"))
+if(sel==1):
+    (native_check(n,element))
+elif(sel==2):
+    (set_check(n,element))
+elif(sel==3):
+    (count_check(n,element))
+else:
+    ("enter correct number")
+"""    
+
 
 
 
